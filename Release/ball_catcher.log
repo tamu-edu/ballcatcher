@@ -1,0 +1,29 @@
+﻿Build started 7/26/2011 3:12:25 AM.
+     1>Project "C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\ball_catcher\ball_catcher.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\ball_catcher.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CController.cc
+         CController.cc
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\Release\ball_catcher.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\ball_catcher.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\Release\ball_catcher.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\Release\ball_catcher.lib" /MACHINE:X86 Release\CController.obj
+         Release\CDropper.obj
+         Release\CGenAlg.obj
+         Release\CNeuralNet.obj
+         Release\CObject.obj
+         Release\CParams.obj
+         Release\main.obj
+         Release\utils.obj
+         Generating code
+         Finished generating code
+         ball_catcher.vcxproj -> C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\Release\ball_catcher.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\Release\ball_catcher.exe;#1" /manifest Release\ball_catcher.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\ball_catcher.unsuccessfulbuild".
+         Touching "Release\ball_catcher.lastbuildstate".
+     1>Done Building Project "C:\Users\Jiryang\Documents\Visual Studio 2010\Projects\ball_catcher\ball_catcher\ball_catcher.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.10

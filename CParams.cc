@@ -1,0 +1,126 @@
+#include "CParams.h"
+
+double CParams::dPi = 3.14159265358979;
+int CParams::EnvWidth = 400;
+int CParams::EnvHeight = 400;
+int CParams::iNumInputs = 0;
+int CParams::iNumHiddens1 = 0;
+int CParams::iNumHiddens2 = 0;
+int CParams::iNumOutputs = 0;
+int CParams::iNumLayers = 0;
+int CParams::iNNType = 0;
+int CParams::iGAType = 0;
+int CParams::iMemoryOrder = 0;
+double CParams::dBias = 0;
+double CParams::dAgentRadius = 0;
+double CParams::dAgentSpeed = 0;
+int CParams::iNumDroppers = 0;
+int CParams::iNumRays = 0;
+int CParams::iRayWidth = 0;
+double CParams::dRayLength = 0;
+double CParams::dBRayLength = 0;
+int CParams::iBallLayout = 0;
+int CParams::iNumBalls = 0;
+double CParams::dBallRadius = 0;
+double CParams::dBallSpeed = 0;
+double CParams::dBreadRadius = 0;
+int CParams::iNumGeneration = 0;
+double CParams::dRetentionRate = 0;
+double CParams::dMutationRate = 0;
+double CParams::dMutationMagnitude = 0;
+int CParams::iMode = 0;
+int CParams::iDisplacement = 0;
+double CParams::dMaxThresh = 1.0;
+double CParams::dMinThresh = -1.0;
+double CParams::dBreadThresh = 0.0;
+double CParams::dMaxWeight = 1.0;
+double CParams::dMinWeight = -1.0;
+double CParams::dROG = 0.0;
+double CParams::dBreadSensorDivisor = 1.0;
+double CParams::dMemDecay = 1.0;
+
+bool CParams::LoadInParameters(char* szFileName) {
+	ifstream grab(szFileName);
+
+	if(!grab) {
+		cout << "Cannot perform 'grab' function!!" << endl;
+		return false;
+	}
+
+	char ParamDescription[40];
+	
+	grab >> ParamDescription;
+	grab >> iNumGeneration;
+	grab >> ParamDescription;
+	grab >> iNumInputs;
+	grab >> ParamDescription;
+	grab >> iNumHiddens1;
+	grab >> ParamDescription;
+	grab >> iNumHiddens2;
+	grab >> ParamDescription;
+	grab >> iNumOutputs;
+	grab >> ParamDescription;
+	grab >> iNumLayers;
+	grab >> ParamDescription;
+	grab >> iNNType;
+	grab >> ParamDescription;
+	grab >> iGAType;
+	grab >> ParamDescription;
+	grab >> iMemoryOrder;
+	grab >> ParamDescription;
+	grab >> dBias;
+	grab >> ParamDescription;
+	grab >> dAgentRadius;
+	grab >> ParamDescription;
+	grab >> dAgentSpeed;
+	grab >> ParamDescription;
+	grab >> iNumDroppers;
+	grab >> ParamDescription;
+	grab >> iNumRays;
+	grab >> ParamDescription; 
+	grab >> iRayWidth;
+	grab >> ParamDescription;
+	grab >> dRayLength;
+	grab >> ParamDescription;
+	grab >> dBRayLength;
+	grab >> ParamDescription;
+	grab >> iBallLayout;
+	grab >> ParamDescription;
+	grab >> iNumBalls;
+	grab >> ParamDescription;
+	grab >> dBallRadius;
+	grab >> ParamDescription;
+	grab >> dBreadRadius;
+	grab >> ParamDescription;
+	grab >> dRetentionRate;
+	grab >> ParamDescription;
+	grab >> dMutationRate;
+	grab >> ParamDescription;
+	grab >> dMutationMagnitude;
+	grab >> ParamDescription;
+	grab >> iMode;
+	grab >> ParamDescription;
+	grab >> iDisplacement;
+	grab >> ParamDescription;
+	grab >> dMaxThresh;
+	grab >> ParamDescription;
+	grab >> dMinThresh;
+	grab >> ParamDescription;
+	grab >> dBreadThresh;
+	grab >> ParamDescription;
+	grab >> dMaxWeight;
+	grab >> ParamDescription;
+	grab >> dMinWeight;
+	grab >> ParamDescription;
+	grab >> dROG;
+	grab >> ParamDescription;
+	grab >> dBreadSensorDivisor;
+	grab >> ParamDescription;
+	grab >> dMemDecay;
+	//grab >> ParamDescription;
+	//grab >> iDelayMode;
+	//grab >> ParamDescription;
+	//grab >> iDelaySize;
+
+	return true;
+}
